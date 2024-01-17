@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "cehcekout-branding"
+client_id = "35313c9eb624c2e3810a56376d711d6c"
+application_url = "https://handmade-stevens-divorce-areas.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_checkout_branding_settings,write_checkout_branding_settings,read_checkouts,write_checkouts"
+
+[auth]
+redirect_urls = [
+  "https://handmade-stevens-divorce-areas.trycloudflare.com/auth/callback",
+  "https://handmade-stevens-divorce-areas.trycloudflare.com/auth/shopify/callback",
+  "https://handmade-stevens-divorce-areas.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "md-you-can-do-anything.myshopify.com"
